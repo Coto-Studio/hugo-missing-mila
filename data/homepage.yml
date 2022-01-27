@@ -1,0 +1,286 @@
+########################## Banner #############################
+banner:
+  enable : true
+  writter : "Margaret E. Ward"
+  title : "Missing Mila, Finding Family"
+  image : "images/MissingMila_cover.jpg"
+  content : "An International Adoption in the Shadow of the Salvadoran Civil War (Louann Atkins Temple Women & Culture Series)"
+  price : "23.86"
+  link : "https://www.amazon.com/gp/product/0292729081/ref=as_li_ss_tl?ie=UTF8&tag=cotoscorner-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=0292729081" 
+
+######################## Book Preview ##########################
+preview:
+  enable : true
+#   pagePreview:
+#     # page preview loop
+#     - image : "images/about/book_page.png"
+#     - image : "images/about/book_page2.png"
+#     - image : "images/about/book_page.png"
+
+  title : "About the book"
+  content : "
+Margaret E. Ward tells a poignant and compelling story of this international adoption and the astonishing revelations that emerged when Nelson's birth family finally relocated him in 1997.
+
+
+Ward vividly recalls the upheaval that occurred when members of Nelson's birth family contacted them and sought a reunion with the boy they knew as Roberto. She describes how their sense of family expanded to include Nelson's Central American relatives, who helped her piece together the lives of her son's birth parents and their clandestine activities as guerrillas in El Salvador's civil war.
+
+
+In particular, Ward develops an internal dialogue with Nelson's deceased mother Mila, an elusive figure whose life and motivations she tries to understand.
+  "
+
+#   inside:
+#     # book inside item loop
+#     - insideItem : "7 Chapter"
+#     - insideItem : "Explained Details"
+#     - insideItem : "Clear Understanding"
+#     - insideItem : "Best practices"
+
+  # button
+  button:
+    enable : true
+    label : "Purchase from University Of Texas Press"
+    link : "https://utpress.utexas.edu/books/warmis"
+
+
+########################## Service ##############################
+service:
+  enable : true
+  title : "Links"
+  serviceItem:
+    # service item loop
+    - title : "[Ana's Miracle: A Family Blog (2007 to 2011)](https://www.anasmiracle.com/)"
+      icon : "ti-link" # themify icon pack : https://themify.me/themify-icons
+      content : "Starting in 2007 several members of the extended family started recording their thoughts and memories online for all to read. The blog features posts from Margaret’s adopted son, Nelson and his birth sister, Eva, but also has posts from Margaret, her son Derek , and other members of Nelson's birth family, including his brother Ernesto, and his cousin Mireya."
+      
+    # service item loop
+    - title : "[Identifying Nelson/Buscando A Roberto: Nelson 's Documentary Film](http://www.identifyingnelson.com/)"
+      icon : "ti-video-clapper" # themify icon pack : https://themify.me/themify-icons
+      content : "This is a documentary about just one young man, part of a group of nearly three hundred who have been identified after disappearing as children during the civil war in El Salvador. Through interviews with other disappeared and still searching families, he reveals the deep wounds still open a generation after one of the bloodiest armed conflicts of the cold war era."
+      
+    # service item loop
+    - title : "[Asociación Pro-Búsqueda de Niñas y Niños Desaparecidos](http://probusqueda.org.sv/)"
+      icon : "ti-link" # themify icon pack : https://themify.me/themify-icons
+      content : "A non-governmental grass-roots organization founded by Father Jon Cortina in 1994 and based in San Salvador that searches for children who disappeared during the Salvadoran Civil War (1980-1992). One of four human rights organizations involved in the search for Nelson/Roberto."
+
+
+######################### Quote #############################
+quote:
+  enable : true
+  quote: "I have read many books about adoption, and have written one myself, and I can honestly say that this is one of the most eloquent testimonies I know."
+  quoteBy: "Helen Fehervary: Professor, Ohio State University"
+
+
+######################### Chapters ##########################
+chapters:
+  enable : true
+  title : "Book Overview"
+#  subtitle : "Libero atque veniam molestiae ipsa aliquid quam facilis dolore."
+  chapter:
+    # chapter preview loop
+    - title : "Chapter One: Adoption"
+      content : "Tegucigalpa, Honduras, May–June 1983"
+
+    # chapter preview loop
+    - title : "Chapter Two: Rediscovery"
+      content : "Massachusetts, August–December 1997"
+      
+    # chapter preview loop
+    - title : "Chapter Three: Reunion"
+      content : "Heredia, Costa Rica, December 1997"
+      
+    # chapter preview loop
+    - title : "Chapter Four: Putting the Pieces Together"
+      content : "The history of Nelson's biological family 1952–1992"
+      
+    # chapter preview loop
+    - title : "Chapter Five: Imagining Mila"
+      content : " New Hampshire, Summer 2007"
+      
+    # chapter preview loop
+    - title : "Chapter Six: The Disappeared Children of El Salvador"
+      #content : "Tips on scouting the city and making the most out of your three-month tourist visa."
+
+
+########################## Revews ###########################
+reviews:
+  enable : true
+  title : "What people are saying"
+  subtitle : "Reviews from around the web"
+  review:
+
+    # review item loop
+    - name : "Erik Ching - Professor, Furman University"
+      #image : "images/client/test-2.jpg" # image size 80*80 px
+      designation : "Blurb"
+      rating : "five" # rating from one to five
+      content : "The writing was a pleasure to read. … The book has a narrative drive that unfolds itself slowly and steadily, but shockingly and in a captivating manner. It’s most basic strength is the raw emotional power of the story and the tremendous coincidence of the particular Salvadoran family to whom the author found herself connected by virtue of the adoption."
+
+    # review item loop
+    - name : "Ann Grantham"
+      #image : "images/client/test-2.jpg" # image size 80*80 px
+      designation : "Amazon.com"
+      rating : "five" # rating from one to five
+      content : "Beneath the clearly written history of a far off Salvadoran civil war is the emotional account of a family who adopted a homeless child, only to learn 14 years later that he was being sought by his birth family. What follows is the coming to grips with this reality - with the voices of many involved individuals, resulting in a redefined sense of family love."
+      
+    # review item loop
+    - name : "Margot Tutun"
+      #image : "images/client/test-1.jpg" # image size 80*80 px
+      designation : "Amazon.com"
+      rating : "five" # rating from one to five
+      content : "Honest, forthright book, very moving story, not whitewashed. Well written, meticulously documented, and filled with fascinating historical background material on Central American politics."
+      
+    # review item loop
+    - name : "	Ellen Sarkisian"
+      #image : "images/client/test-2.jpg" # image size 80*80 px
+      designation : "Amazon.com"
+      rating : "five" # rating from one to five
+      content : "Great book, love having it. I had originally read it in the library, but wanted a copy of my own."
+      
+    # review item loop
+    - name : "A Chicagoan"
+      #image : "images/client/test-2.jpg" # image size 80*80 px
+      designation : "Amazon.com"
+      rating : "five" # rating from one to five
+      content : "This is a fascinating true story of parents who traced the family of their foreign-born adopted son and how so many lives became enriched in the process. A wonderful read."
+
+    # review item loop
+    - name : "Sherry"
+      #image : "images/client/test-2.jpg" # image size 80*80 px
+      designation : "Goodreads"
+      rating : "five" # rating from one to five
+      content : "This is an articulate, sensitive and fascinating memoir of an international adoption in the early 1980's. Ward's account is heartfelt with the excitement and gratification of adopting a young Honduran boy, then subsequently learning how his early history was intertwined with the violence of civil war in Central America. She presents her individual family's account then adds research about the tragic 'lost children', the orphans of civil war in the region. The entire book is mesmerizing and touching. Highly recommend it!"
+
+    # review item loop
+    - name : "Kathy Halverson "
+      #image : "images/client/test-2.jpg" # image size 80*80 px
+      designation : "Goodreads"
+      rating : "five" # rating from one to five
+      content : "Highly recommend this very personal story of an American couple who thought they were adopting a two year old Honduras orphan. Fourteen years later they discover that their adopted son Nelson is really from El Salvador and that he is part of the thousands of children who disappeared during the Salvadoran Civil War. Set against the backdrop of this brutal conflict the books outlines with scholarly detail the journey of the adoptive and birth families who come together with much love to bond as one family. This is a book you will remember long after you have read the last page."
+
+      
+    # review item loop
+    - name : "Laila"
+      #image : "images/client/test-2.jpg" # image size 80*80 px
+      designation : "Amazon.com"
+      rating : "five" # rating from one to five
+      content : "Several months have passed since I read Missing Mila, Finding Family, and this compelling true story told by Margaret Ward remains in my mind. Parents quickly called to Honduras to meet their to-be-adopted son, mystery surrounding the boy's previous life, the whirlwind of emotions unleashed by Nelson's birth family relocating him in 1997, and the families coming together and forming strong bonds, all grasp the reader's attention from cover to cover. Nelson's deceased mother Mila's elusive presence is central to the story, as is the backdrop of the Salvadoran Civil War, where Nelson's birth parents were involved in clandestine activities as guerrillas. Beautifully written, carefully researched, heartwarming, and very highly recommended."
+      
+    # review item loop
+    - name : "Karen Hurst"
+      #image : "images/client/test-1.jpg" # image size 80*80 px
+      designation : "Amazon.com"
+      rating : "five" # rating from one to five
+      content : "Margaret Ward has written an extraordinary book about her family's international adoption. This true story is gripping and compelling. The author writes with scholarly accuracy and emotional clarity about her family's experiences. She details the history of the El Salvador dictatorship and the subsequent revolution. This book describes the journey of learning about their adopted son's family of origin and embracing them. Ward takes us on a remarkable journey of compassion, empathy and love.
+      
+      
+The pinnacle of the book is the author's mental dialogue with her adopted son's mother and her wrenching decision to become a revolutionary while she was a mother.
+The quality of the writing is superb and the lessons we take from this book are timeless and profound."
+
+#################################### device ################################
+devices:
+  enable : true
+  title : "Read it on your favorite device!"
+  content : "Missing Mila, Finding Family is available digitally from the Amazon Kindle Store and the [Google Play Store](https://play.google.com/store/books/details/Margaret_E_Ward_Missing_Mila_Finding_Family?id=XAcFa32PYAAC)."
+  image : "images/IMG_8770.jpg"
+
+  # button
+  button:
+    enable : true
+    label : "Purchase on amazon"
+    link : "https://www.amazon.com/Missing-Finding-Family-Louann-Culture-ebook-dp-B008BWDFZG/dp/B008BWDFZG/ref=mt_kindle?_encoding=UTF8&me=&qid="
+
+######################################## author #############################
+author:
+  enable : true
+  image : "images/author_meward.jpg"
+  name : "Margaret E. Ward"
+  designation : "Ph. D., D. Litt., h. c., Professor of German, Emerita"
+  content : "
+Margaret taught at Wellesley College in Wellesley Massachusetts from 1971 to 2010. She graduated magna cum laude from Wilson College in Chambersburg, Pennsylvania in 1965 and did her graduate studies in German Languages and Literatures at Indiana University in Bloomington Indiana, including two years on fellowship at universities in Berlin and Paris. During her tenure at Wellesley, she held the rotating William R. Kenan, Jr. professorship from 1995 to 1997. A prize in her name is awarded each year to an outstanding senior major in Women’s and Gender Studies in recognition of her contribution to the establishment of that department.
+
+
+Professor Ward received NEH, Fulbright, and Mellon fellowships in support of her research and published on Bertolt Brecht, post-1945 political drama, and women’s biography. Her book, Fanny Lewald: Between Rebellion and Renunciation  (2006), based on extensive archival research in the former East Germany, was the first English-language biography of this prolific 19th-century German novelist, essayist, and early advocate of women's education and right to work.
+
+
+Work on Missing Mila, Finding Family, began in 2004-2005 with a research trip to Central America. The book incorporates personal interviews, journal entries, letters, poems, blog posts, and photos, peeling back the layers of an unusual international adoption and describing how two families have become one. The author relies on the work of historians, investigative journalists and sociologists, but writes as an adoptive mother.
+"
+
+  # signature
+  siggnature : "images/about/2.png"
+
+
+################################ Awards #####################################
+awards:
+  enable : false
+  title : "We are award winner best selling book among the top rated 10 books!"
+  award:
+    # award item loop
+    - title : "International award"
+      image : "images/about/award-1.png"
+      
+    # award item loop
+    - title : "Meritorious award"
+      image : "images/about/award-2.png"
+      
+    # award item loop
+    - title : "Best book award"
+      image : "images/about/award-3.png"
+      
+    # award item loop
+    - title : "Excellence award"
+      image : "images/about/award-4.png"
+
+
+############################# Other books ###############################
+otherBooks:
+  enable : false
+  title : "Others books by the author"
+  subtitle : "Laboriosam eos aperiam excepturi accusamus velit repudiandae sit rem incidunt, similique
+            facere quas blanditiis."
+  book:
+    # books loop
+    - image : "images/about/b-1.jpg"
+      link : "#"
+      
+    # books loop
+    - image : "images/about/b-2.jpg"
+      link : "#"
+      
+    # books loop
+    - image : "images/about/b-3.jpg"
+      link : "#"
+      
+    # books loop
+    - image : "images/about/b-4.jpg"
+      link : "#"
+
+################################ Blog ###################################
+blog:
+  enable : true
+  title : "EXCERPTS"
+#  subtitle : "Chapter 1 - Adoption"
+  # blog post comes from 'content/blog'
+
+################################# Contact ##############################
+contact:
+  enable : true
+  title : "Contact Us"
+  subtitle : "Whether you have questions or you would just like to say hello, contact us."
+  contactItem:        
+    # contact Item loop
+    - title : "Contact the Author"
+      icon : "ti-email" # themify icon pack : https://themify.me/themify-icons
+      list:
+        - listItem : "mward@missingmila.com"
+
+    # contact Item loop
+    - title : "Contact Nelson, the subject of the book"
+      icon : "ti-email" # themify icon pack : https://themify.me/themify-icons
+      list:
+        - listItem : "hello@nelsonroberto.com"
+
+    # contact Item loop
+    - title : "Contact the Publisher"
+      icon : "ti-link" # themify icon pack : https://themify.me/themify-icons
+      list:
+        - listItem : "[University Of Texas Press](https://utpress.utexas.edu/contact)"  
