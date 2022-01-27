@@ -1,7 +1,7 @@
-baseURL = "https://www.missingmila.com/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Missing Mila, Finding Family"
-theme = "Influencer-hugo"
+theme = "influencer-hugo"
 summaryLength = "10"
 paginate = 6
 
