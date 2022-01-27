@@ -110,5 +110,5 @@ link = "#"
 [[deployment.targets]]
 # URL = "s3://<Bucket Name>?region=<AWS region>"
 name = "production"
-URL = "s3://static-missingmila?endpoint=linodeobjects.com&region=us-east-1"
+URL = "s3://static-missingmila?endpoint=us-east-1.linodeobjects.com&region=us-east-1"
 
