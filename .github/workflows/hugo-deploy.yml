@@ -1,0 +1,22 @@
+name: Hugo Build and Deploy to S3
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out master
+        uses: actions/checkout@master
+
+      - name: Deploy Hugo to S3
+        uses: AlbertMorenoDEV/deploy-hugo-to-s3-action@v0.0.5
+        with:
+          hugo-version: 0.92.0
+          aws-access-key-id: ${{ secrets.LINODE_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.LINODE_SECRET_ACCESS_KEY }}

@@ -104,3 +104,11 @@ link = "#"
 title = "linkedin"
 icon = "ti-linkedin" # themify icon : https://themify.me/themify-icons
 link = "#"
+
+############################# Deploy ###################
+[deployment]
+[[deployment.targets]]
+# URL = "s3://<Bucket Name>?region=<AWS region>"
+name = "production"
+URL = "s3://static-missingmila?endpoint=linodeobjects.com&region=us-east-1"
+
