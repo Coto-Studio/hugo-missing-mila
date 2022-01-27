@@ -2,9 +2,9 @@ name: Hugo Build and Deploy to S3
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   build:
