@@ -24,7 +24,7 @@ jobs:
           hugo-version: 0.92.0
           aws-access-key-id: $obj-access-key
           aws-secret-access-key: $obj-secret-key
-          target: "s3://$bucket?endpoint=$region.linodeobjects.com&region=$region"
+          target: "production"
 
       - name: Set up S3cmd cli tool
         uses: s3-actions/s3cmd@v1.1
