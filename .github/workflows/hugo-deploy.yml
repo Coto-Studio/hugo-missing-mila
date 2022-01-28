@@ -22,17 +22,17 @@ jobs:
         uses: AlbertMorenoDEV/deploy-hugo-to-s3-action@v0.0.5
         with:
           hugo-version: 0.92.0
-          aws-access-key-id: $obj-access-key
-          aws-secret-access-key: $obj-secret-key
+          aws-access-key-id: ${{ env.obj-access-key }}
+          aws-secret-access-key: ${{ env.obj-secret-key }}
           target: "production"
 
       - name: Set up S3cmd cli tool
         uses: s3-actions/s3cmd@v1.1
         with:
           provider: linode # default is linode
-          access_key: $obj-access-key
-          secret_key: $obj-secret-key
+          access_key: ${{ env.obj-access-key }}
+          secret_key: ${{ env.obj-secret-key }}
 
       - name: Update File Permissions
         run: |
-          s3cmd setacl s3://$bucket --acl-public --recursive
+          s3cmd setacl s3://${{ env.bucket }} --acl-public --recursive
