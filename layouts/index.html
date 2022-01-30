@@ -337,14 +337,11 @@
     </div>
     {{ end }}
     <div class="row">
-      {{ range first 3 (where .Site.RegularPages "Type" "post")}}
+      {{ range first 3 (where .Site.RegularPages "Type" "post").Reverse }}
       <div class="col-lg-4 col-md-6 col-sm-6">
       {{ .Render "post"}}
       </div>
       {{ end }}
-    </div>
-    <div class="text-center mt-5">
-      <a href="/blog" class="btn btn-main">All Post</a>
     </div>
   </div>
 </section>
