@@ -7,8 +7,8 @@ on:
 env:
   obj-access-key: ${{ secrets.AWS_ACCESS_KEY_ID }}
   obj-secret-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  region: "us-east-1"
-  bucket: "static-missingmila"
+  obj-region: "us-east-1"
+  obj-bucket: "static-missingmila"
 
 jobs:
   build:
@@ -24,6 +24,7 @@ jobs:
           hugo-version: 0.92.0
           aws-access-key-id: ${{ env.obj-access-key }}
           aws-secret-access-key: ${{ env.obj-secret-key }}
+          region: ${{ env.obj-region }}
           target: "production"
 
       - name: Set up S3cmd cli tool
@@ -35,4 +36,4 @@ jobs:
 
       - name: Update File Permissions
         run: |
-          s3cmd setacl s3://${{ env.bucket }} --acl-public --recursive
+          s3cmd setacl s3://${{ env.obj-bucket }} --acl-public --recursive
