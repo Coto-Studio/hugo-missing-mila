@@ -32,8 +32,8 @@ jobs:
         with:
           provider: linode # default is linode
           region: "us-east-1"
-          access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          access_key: ${{ env.obj-access-key }}
+          secret_key: ${{ env.obj-secret-key }}
 
       - name: Update File Permissions
         run: |
