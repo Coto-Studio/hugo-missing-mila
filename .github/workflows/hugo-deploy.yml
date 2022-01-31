@@ -31,9 +31,10 @@ jobs:
         uses: s3-actions/s3cmd@v1.1
         with:
           provider: linode # default is linode
-          access_key: ${{ env.obj-access-key }}
-          secret_key: ${{ env.obj-secret-key }}
+          region: "us-east-1"
+          access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
       - name: Update File Permissions
         run: |
-          s3cmd setacl s3://static-missingmila --acl-public --recursive
+          s3cmd setacl s3://static-missingmila/ --acl-public --recursive
