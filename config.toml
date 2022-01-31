@@ -38,8 +38,8 @@ paginate = 6
   weight = 2
   
   [[menu.main]]
-  name = "Chapter"
-  URL = "chapter"
+  name = "Overview"
+  URL = "book-overview"
   weight = 3
   
   [[menu.main]]
