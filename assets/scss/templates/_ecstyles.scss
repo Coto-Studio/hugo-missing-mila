@@ -1,3 +1,60 @@
-html{
- border: solid 1px ;
+
+
+#hero-img{
+border-radius: none;
+}
+
+img,
+.rounded-15 {
+ border-radius: 15px !important;
+}
+
+
+// ==========test area =========
+.b-test{
+ border: 2px red solid;
+}
+
+//===============hero Area==========
+
+.hero-title{
+ max-width: 600px;
+}
+
+.hero-content{
+ max-width: 610px;
+}
+
+//============device Area========
+
+.device-content{
+ max-width: 480px;
+ margin-bottom: 2rem;
+}
+
+
+// ==========container=============
+@media (min-width:1200px) {
+ .container {
+  max-width: 1300px
+ }
+}
+
+
+
+// ============= footer ===========
+.footer-smtext{
+ font-size: smaller;
+}
+
+.footer-desing{
+ text-align: center;
+}
+
+.footer-content{
+ max-width: 450px;
+}
+
+.footer-copy{
+ text-align: end;
 }
