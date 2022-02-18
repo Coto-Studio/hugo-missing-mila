@@ -7,10 +7,10 @@
   <div class="container">
     <div class="row justify-content-between">
       <div class="col-lg-7 col-md-8">
-        <div class="main-banner">
+        <div class="main-banner mt-5">
           <span class="text-color font-weight-bold">{{ .writter | markdownify }}</span>
-          <h1 class="mb-3 mt-2">{{ .title | markdownify }}</h1>
-          <p class="mb-4">{{ .content | markdownify }}</p>
+          <h1 class=" hero-title mb-3 mt-4">{{ .title | markdownify }}</h1>
+          <p class=" hero-content mb-4">{{ .content | markdownify }}</p>
           <a href="https://www.amazon.com/gp/product/0292729081/ref=as_li_ss_tl?ie=UTF8&amp;tag=cotoscorner-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0292729081" class="btn btn-main mt-2">Purchase now <i class="ti-angle-right ml-3"></i></a>
         </button>
         </div>
@@ -18,8 +18,8 @@
 
       {{ if .image }}
       <div class="col-lg-5 d-none d-lg-block">
-        <div class="banner-img pt-5">
-          <img src="{{ .image | relURL }}" alt="{{ .title | markdownify }}" class="img-fluid w-100">
+        <div class="banner-img">
+          <img id="hero-img"  src="{{ .image | relURL }}" alt="{{ .title | markdownify }}" class="img-fluid w-100">
         </div>
       </div>
       {{ end }}
@@ -136,7 +136,7 @@
     <div class="row">
       {{ range .chapter }}
       <div class="col-sm-6">
-        <div class="chapter-item">
+        <div class="chapter-item rounded-15">
           <h4>{{ .title | markdownify }}</h4>
           <p>{{ .content | markdownify }}</p>
         </div>
@@ -200,10 +200,10 @@
     <div class="row align-items-center">
       <div class="col-lg-6 col-md-6">
         <h2 class="mb-4">{{ .title | markdownify }}</h2>
-        <p>{{ .content | markdownify }}</p>
+        <p class="device-content ">{{ .content | markdownify }}</p>
 
         {{ range .feature }}
-        <div class="feature-item d-flex mt-5 mb-3">
+        <div class="feature-item d-flex mt-6 mb-3">
           {{ if .icon }}
           <div class="icon-block">
             <i class="{{ .icon }}"></i>
@@ -225,7 +225,7 @@
 
       <div class="col-lg-6 col-md-6">
         <div class="mt-5 mt-lg-0">
-          <img src="{{ .image | relURL }}" alt="" class="img-fluid w-100">
+          <img src="{{ .image | relURL }}" alt="" class=" rounded-15 img-fluid w-100 roude">
         </div>
       </div>
     </div>
@@ -350,7 +350,7 @@
 <!-- Contact -->
 {{ if .Site.Data.homepage.contact.enable }}
 {{ with .Site.Data.homepage.contact }}
-<section class="section contact bg-grey" id="contact">
+<section class="section contact bg-grey " id="contact">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-12 col-lg-8">
@@ -364,7 +364,7 @@
     <div class="row">
       {{ range .contactItem }}
       <div class="col-lg-4 col-sm-6">
-        <div class="contact-info-block text-center mb-4">
+        <div class="contact-info-block text-center mb-4 rounded-15">
           <i class="{{ .icon }}"></i>
           <p class="mb-0">{{ .title | markdownify }}</p>
           {{ range .list }}

@@ -265,22 +265,23 @@ blog:
 contact:
   enable : true
   title : "Contact Us"
-  subtitle : "Whether you have questions or you would just like to say hello, contact us."
+  subtitle : "Whether you have questions or you would just like to say hello."
   contactItem:        
     # contact Item loop
-    - title : "Contact the Author"
+    - title : "The Author"
       icon : "ti-email" # themify icon pack : https://themify.me/themify-icons
       list:
         - listItem : "mward@missingmila.com"
+        
+    # contact Item loop
+    - title : "The Publisher"
+      icon : "ti-link" # themify icon pack : https://themify.me/themify-icons
+      list:
+        - listItem : "[University Of Texas Press](https://utpress.utexas.edu/contact)"  
 
     # contact Item loop
-    - title : "Contact Nelson, the subject of the book"
+    - title : "Nelson, the subject of the book"
       icon : "ti-email" # themify icon pack : https://themify.me/themify-icons
       list:
         - listItem : "hello@nelsonroberto.com"
 
-    # contact Item loop
-    - title : "Contact the Publisher"
-      icon : "ti-link" # themify icon pack : https://themify.me/themify-icons
-      list:
-        - listItem : "[University Of Texas Press](https://utpress.utexas.edu/contact)"  
