@@ -1,18 +1,8 @@
 
 
-#hero-img{
-border-radius: none;
-}
-
 img,
 .rounded-15 {
- border-radius: 15px !important;
-}
-
-
-// ==========test area =========
-.b-test{
- border: 2px red solid;
+ border-radius: 15px;
 }
 
 //===============hero Area==========
@@ -24,6 +14,12 @@ img,
 .hero-content{
  max-width: 610px;
 }
+
+.banner-img > img{t
+border-radius: 0px;
+// border: solid red 4px;
+}
+
 
 //============device Area========
 
