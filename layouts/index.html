@@ -19,7 +19,11 @@
       {{ if .image }}
       <div class="col-lg-5 d-none d-lg-block">
         <div class="banner-img">
+<<<<<<< HEAD
           <img src="{{ .image | relURL }}" alt="{{ .title | markdownify }}" class="img-fluid w-100">
+=======
+          <img id="hero-img"  src="{{ .image | relURL }}" alt="{{ .title | markdownify }}" class="img-fluid w-100">
+>>>>>>> 1f8efd1922d196ad21e5e4e0cd346cfbc138a9b9
         </div>
       </div>
       {{ end }}

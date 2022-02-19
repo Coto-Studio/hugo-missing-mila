@@ -1,8 +1,24 @@
 
 
+<<<<<<< HEAD
 img,
 .rounded-15 {
  border-radius: 15px;
+=======
+#hero-img{
+border-radius: none;
+}
+
+img,
+.rounded-15 {
+ border-radius: 15px !important;
+}
+
+
+// ==========test area =========
+.b-test{
+ border: 2px red solid;
+>>>>>>> 1f8efd1922d196ad21e5e4e0cd346cfbc138a9b9
 }
 
 //===============hero Area==========
@@ -15,12 +31,15 @@ img,
  max-width: 610px;
 }
 
+<<<<<<< HEAD
 .banner-img > img{t
 border-radius: 0px;
 // border: solid red 4px;
 }
 
 
+=======
+>>>>>>> 1f8efd1922d196ad21e5e4e0cd346cfbc138a9b9
 //============device Area========
 
 .device-content{
