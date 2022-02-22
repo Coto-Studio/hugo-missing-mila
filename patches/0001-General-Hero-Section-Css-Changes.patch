@@ -1,0 +1,74 @@
+From 1f47a78271262e110556eed22720d641e1f03f33 Mon Sep 17 00:00:00 2001
+Message-Id: <1f47a78271262e110556eed22720d641e1f03f33.1645545256.git.eacoto4@gmail.com>
+From: Ernesto Coto <eacoto4@gmail.com>
+Date: Tue, 22 Feb 2022 08:13:05 -0500
+Subject: [PATCH] General & Hero Section  Css Changes
+
+---
+ assets/scss/templates/_ecstyles.scss | 33 ++++++++++++++++++++++++++++
+ layouts/index.html                   |  4 ++--
+ 2 files changed, 35 insertions(+), 2 deletions(-)
+
+diff --git a/assets/scss/templates/_ecstyles.scss b/assets/scss/templates/_ecstyles.scss
+index e69de29..17aeca4 100644
+--- a/assets/scss/templates/_ecstyles.scss
++++ b/assets/scss/templates/_ecstyles.scss
+@@ -0,0 +1,33 @@
++// =========General css
++
++
++@media (min-width:1200px) {
++ .container {
++  max-width: 1300px
++ }
++}
++
++img{
++ border-radius: 15px;
++}
++
++
++// ======= Hero Area ======
++
++
++.banner-img >img {
++  border-radius: 0px;
++}
++
++
++.main-banner {
++  padding: 150px 0 ;
++}
++
++
++.main-banner > 
++h1,p
++{
++ max-width: 610px;
++}
++
+diff --git a/layouts/index.html b/layouts/index.html
+index 4c5e8ff..0ac8674 100644
+--- a/layouts/index.html
++++ b/layouts/index.html
+@@ -9,7 +9,7 @@
+       <div class="col-lg-7 col-md-8">
+         <div class="main-banner">
+           <span class="text-color font-weight-bold">{{ .writter | markdownify }}</span>
+-          <h1 class="mb-3 mt-2">{{ .title | markdownify }}</h1>
++          <h1 class="mb-3 mt-3">{{ .title | markdownify }}</h1>
+           <p class="mb-4">{{ .content | markdownify }}</p>
+           <a href="https://www.amazon.com/gp/product/0292729081/ref=as_li_ss_tl?ie=UTF8&amp;tag=cotoscorner-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0292729081" class="btn btn-main mt-2">Purchase now <i class="ti-angle-right ml-3"></i></a>
+         </button>
+@@ -18,7 +18,7 @@
+ 
+       {{ if .image }}
+       <div class="col-lg-5 d-none d-lg-block">
+-        <div class="banner-img pt-5">
++        <div class="banner-img ">
+           <img src="{{ .image | relURL }}" alt="{{ .title | markdownify }}" class="img-fluid w-100">
+         </div>
+       </div>
+-- 
+2.32.0
+
