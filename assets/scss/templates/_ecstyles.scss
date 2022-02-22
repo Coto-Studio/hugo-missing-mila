@@ -1,0 +1,33 @@
+// =========General css
+
+
+@media (min-width:1200px) {
+ .container {
+  max-width: 1300px
+ }
+}
+
+img{
+ border-radius: 15px;
+}
+
+
+// ======= Hero Area ======
+
+
+.banner-img >img {
+  border-radius: 0px;
+}
+
+
+.main-banner {
+  padding: 150px 0 ;
+}
+
+
+.main-banner > 
+h1,p
+{
+ max-width: 610px;
+}
+
