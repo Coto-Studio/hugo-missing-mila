@@ -1,9 +1,8 @@
 {{ define "main" }}
 
 <!-- Banner -->
-{{ if .Site.Data.homepage.banner.enable }}
-{{ with .Site.Data.homepage.banner }}
-<section class="banner-main py-7" id="banner">
+{{ if .Site.Data.homepage.banner.enable }} {{ with .Site.Data.homepage.banner }}
+<section class="banner-main py-7" id="main-content">
   <div class="container">
     <div class="row justify-content-between">
       <div class="col-lg-7 col-md-8">
@@ -11,42 +10,53 @@
           <span class="text-color font-weight-bold">{{ .writter | markdownify }}</span>
           <h1 class="mb-3 mt-2">{{ .title | markdownify }}</h1>
           <p class="mb-4">{{ .content | markdownify }}</p>
-          <a href="https://www.amazon.com/gp/product/0292729081/ref=as_li_ss_tl?ie=UTF8&amp;tag=cotoscorner-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0292729081" class="btn btn-main mt-2">Purchase now <i class="ti-angle-right ml-3"></i></a>
-        </button>
+          <a
+            href="https://www.amazon.com/gp/product/0292729081/ref=as_li_ss_tl?ie=UTF8&amp;tag=cotoscorner-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0292729081"
+            class="btn btn-main mt-2"
+            >Purchase now <i class="ti-angle-right ml-3"></i>
+          </a>
         </div>
       </div>
 
       {{ if .image }}
       <div class="col-lg-5 d-none d-lg-block">
         <div class="banner-img pt-5">
-          <img src="{{ .image | relURL }}" alt="{{ .title | markdownify }}" class="img-fluid w-100">
+          <img src="{{ .image | relURL }}" alt="{{ .title | markdownify }}" class="img-fluid w-100" />
         </div>
       </div>
       {{ end }}
     </div>
   </div>
 </section>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }}
 
 <!-- Book preview -->
-{{ if .Site.Data.homepage.preview.enable }}
-{{ with .Site.Data.homepage.preview }}
+{{ if .Site.Data.homepage.preview.enable }} {{ with .Site.Data.homepage.preview }}
 <section class="section" id="book">
   <div class="container">
     <div class="row">
       <div class="col-lg-5">
         <div class="book-preview">
           <div class="background-device img-fluid">
-            <iframe class="background-device " src="https://player.vimeo.com/video/45146638?byline=0&amp;portrait=0&amp;color=97313b" width="640" height="360" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            <iframe
+              class="background-device"
+              src="https://player.vimeo.com/video/45146638?byline=0&amp;portrait=0&amp;color=97313b"
+              width="640"
+              height="360"
+              frameborder="0"
+              webkitAllowFullScreen
+              mozallowfullscreen
+              allowfullscreen
+            ></iframe>
           </div>
           <div class="book-pages">
             {{ range .pagePreview }}
             <div class="item">
-              <img src="{{ .image | relURL }}" alt="page-preview" class="img-fluid">
+              <img src="{{ .image | relURL }}" alt="page-preview" class="img-fluid" />
               <div class="overlay">
-                <a href="{{ .image | relURL }}" class="popup-gallery img-fluid" data-title="Preview"><i
-                    class="ti-fullscreen"></i></a>
+                <a href="{{ .image | relURL }}" class="popup-gallery img-fluid" data-title="Preview"
+                  ><i class="ti-fullscreen"></i
+                ></a>
               </div>
             </div>
             {{ end }}
@@ -64,22 +74,18 @@
             <li><i class="ti-check mr-3"></i> {{ .insideItem | markdownify }}</li>
             {{ end }}
           </ul>
-          {{ if .button.enable }}
-          {{ with .button }}
+          {{ if .button.enable }} {{ with .button }}
           <a href="{{ .link | safeURL }}" class="btn btn-main-2">{{ .label }}</a>
-          {{ end }}
-          {{ end }}
+          {{ end }} {{ end }}
         </div>
       </div>
     </div>
   </div>
 </section>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }}
 
 <!--Services -->
-{{ if .Site.Data.homepage.service.enable }}
-{{ with .Site.Data.homepage.service }}
+{{ if .Site.Data.homepage.service.enable }} {{ with .Site.Data.homepage.service }}
 <section class="pt-4 section-bottom" id="service">
   <div class="container">
     <div class="row align-items-center">
@@ -95,12 +101,10 @@
     </div>
   </div>
 </section>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }}
 
 <!-- Quote -->
-{{ if .Site.Data.homepage.quote.enable }}
-{{ with .Site.Data.homepage.quote }}
+{{ if .Site.Data.homepage.quote.enable }} {{ with .Site.Data.homepage.quote }}
 <section class="section bg-grey" id="quote">
   <div class="container">
     <div class="row justify-content-center">
@@ -117,12 +121,10 @@
     </div>
   </div>
 </section>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }}
 
 <!-- Book Overview -->
-{{ if .Site.Data.homepage.chapters.enable }}
-{{ with .Site.Data.homepage.chapters }}
+{{ if .Site.Data.homepage.chapters.enable }} {{ with .Site.Data.homepage.chapters }}
 <section class="section chapter" id="book-overview">
   <div class="container">
     <div class="row">
@@ -145,12 +147,10 @@
     </div>
   </div>
 </section>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }}
 
 <!-- Review-->
-{{ if .Site.Data.homepage.reviews.enable }}
-{{ with .Site.Data.homepage.reviews }}
+{{ if .Site.Data.homepage.reviews.enable }} {{ with .Site.Data.homepage.reviews }}
 <section class="section-bottom testimonial" id="review">
   <div class="container">
     <div class="row justify-content-center">
@@ -168,7 +168,7 @@
         <div class="test-item">
           <div class="testimonial-item-content">
             <div class="test-author-thumb mb-4">
-<!--               <img src="{{ .image | relURL }}" alt="Testimonial author" class="img-fluid"> -->
+              <!--               <img src="{{ .image | relURL }}" alt="Testimonial author" class="img-fluid"> -->
               <div class="test-author-info mt-4">
                 <ul class="rating list-inline mb-0 {{ .rating }}">
                   <li class="list-inline-item mx-0"><i class="ti-star"></i></li>
@@ -189,12 +189,10 @@
     </div>
   </div>
 </section>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }}
 
 <!-- Device feature -->
-{{ if .Site.Data.homepage.devices.enable }}
-{{ with .Site.Data.homepage.devices }}
+{{ if .Site.Data.homepage.devices.enable }} {{ with .Site.Data.homepage.devices }}
 <section class="feature-home section" id="device">
   <div class="container">
     <div class="row align-items-center">
@@ -214,35 +212,29 @@
             <p>{{ .content | markdownify }}</p>
           </div>
         </div>
-        {{ end }}
-
-        {{ if .button.enable }}
-        {{ with .button }}
+        {{ end }} {{ if .button.enable }} {{ with .button }}
         <a href="{{ .link | safeURL }}" class="btn btn-main-2">{{ .label }} <i class="ti-angle-right ml-3"></i></a>
-        {{ end }}
-        {{ end }}
+        {{ end }} {{ end }}
       </div>
 
       <div class="col-lg-6 col-md-6">
         <div class="mt-5 mt-lg-0">
-          <img src="{{ .image | relURL }}" alt="" class="img-fluid w-100">
+          <img src="{{ .image | relURL }}" alt="" class="img-fluid w-100" />
         </div>
       </div>
     </div>
   </div>
 </section>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }}
 
 <!-- About Author -->
-{{ if .Site.Data.homepage.author.enable }}
-{{ with .Site.Data.homepage.author }}
+{{ if .Site.Data.homepage.author.enable }} {{ with .Site.Data.homepage.author }}
 <section class="about section" id="author">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-5">
         <div class="about-img">
-          <img src="{{ .image | relURL }}" alt="{{ .name }}" class="img-fluid w-100">
+          <img src="{{ .image | relURL }}" alt="{{ .name }}" class="img-fluid w-100" />
         </div>
       </div>
 
@@ -250,22 +242,18 @@
         <div class="author-info pl-4 mt-5 mt-lg-0">
           <h2 class="text-lg">{{ .name }}</h2>
           <p class="mb-4 lead">- {{ .designation }}</p>
-          {{ .content | markdownify }}
-
-          {{ if .signature }}
-          <img src="{{ .signature | relURL }}" alt="" class="img-fluid">
+          {{ .content | markdownify }} {{ if .signature }}
+          <img src="{{ .signature | relURL }}" alt="" class="img-fluid" />
           {{ end }}
         </div>
       </div>
     </div>
   </div>
 </section>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }}
 
 <!-- Awards -->
-{{ if .Site.Data.homepage.awards.enable }}
-{{ with .Site.Data.homepage.awards }}
+{{ if .Site.Data.homepage.awards.enable }} {{ with .Site.Data.homepage.awards }}
 <section id="clients-logo-section" class="section-top" id="awards">
   <div class="container">
     <div class="row justify-content-center">
@@ -281,19 +269,17 @@
       <div class="col-lg-3 col-sm-6">
         <div class="award-block text-center p-4 border mb-4">
           <h5 class="mb-3">{{ .title | markdownify }}</h5>
-          <img src="{{ .image | relURL }}" alt="" class="img-fluid">
+          <img src="{{ .image | relURL }}" alt="" class="img-fluid" />
         </div>
       </div>
       {{ end }}
     </div>
   </div>
 </section>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }}
 
 <!-- Others books -->
-{{ if .Site.Data.homepage.otherBooks.enable }}
-{{ with .Site.Data.homepage.otherBooks }}
+{{ if .Site.Data.homepage.otherBooks.enable }} {{ with .Site.Data.homepage.otherBooks }}
 <section class="section others-book" id="otherBooks">
   <div class="container">
     <div class="row justify-content-center">
@@ -309,7 +295,7 @@
       {{ range .book }}
       <div class="col-lg-3 col-md-6 col-sm-6">
         <div class="book-item mb-4 mb-lg-0">
-          <img src="{{ .image | relURL }}" alt="" class="img-fluid">
+          <img src="{{ .image | relURL }}" alt="" class="img-fluid" />
           <a href="{{ .link | safeURL }}" class="hover-item">
             <i class="ti-link"></i>
           </a>
@@ -319,8 +305,7 @@
     </div>
   </div>
 </section>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }}
 
 <!-- Latest blog -->
 {{ if .Site.Data.homepage.blog.enable }}
@@ -338,9 +323,7 @@
     {{ end }}
     <div class="row">
       {{ range first 3 (where .Site.RegularPages "Type" "post").Reverse }}
-      <div class="col-lg-4 col-md-6 col-sm-6">
-      {{ .Render "post"}}
-      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6">{{ .Render "post"}}</div>
       {{ end }}
     </div>
   </div>
@@ -348,8 +331,7 @@
 {{ end }}
 
 <!-- Contact -->
-{{ if .Site.Data.homepage.contact.enable }}
-{{ with .Site.Data.homepage.contact }}
+{{ if .Site.Data.homepage.contact.enable }} {{ with .Site.Data.homepage.contact }}
 <section class="section contact bg-grey" id="contact">
   <div class="container">
     <div class="row justify-content-center">
@@ -376,7 +358,4 @@
     </div>
   </div>
 </section>
-{{ end }}
-{{ end }}
-
-{{ end }}
+{{ end }} {{ end }} {{ end }}
