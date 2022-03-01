@@ -3,3 +3,5 @@ public/
 .nova/*
 .hugo_*
 resources/
+.sass-cache/
+.vscode/

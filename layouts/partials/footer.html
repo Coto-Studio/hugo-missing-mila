@@ -2,6 +2,7 @@
   <div class="container">
     <div class="row justify-content-between align-items-center">
       <div class="col-lg-6 col-sm-12 ">
+
         <div class="footer-widget">
           <a class="mb-4 d-inline-block" href="{{ .Site.BaseURL }}">
             {{ if .Site.Params.logo }}
@@ -10,21 +11,28 @@
             <h2 class="mb-0 text-dark">{{ .Site.Title }}</h2>
             {{ end }}
           </a>
-          <p class="mb-4">{{ .Site.Params.footer.content | markdownify }}</p>
+          <p class="mb-4 footer-text small-text">{{ .Site.Params.footer.content | markdownify }}</p>
         </div>
       </div>
+
       <div class="col-lg-6">
-        <p class="footer-copy">
-          Designed by <a href="https://nelsonroberto.com/">Nelson/Roberto</a> using the <a href="https://gethugothemes.com/products/influencer-hugo/">Influencer Theme</a> for <a href="https://gohugo.io">Hugo</a>.
-        </p>
-        
         <!-- Copyright -->
-        <p class="footer-copy">
+        <p class="footer-copy mt-1 small-text mt-lg-4">
           {{ .Site.Params.copyright | markdownify }}
         </p>
       </div>
     </div>
   </div>
+
+  <div class="container">
+    <div class="row footer-btm mt-3 pt-2 border-top">
+      <div class="col-lg-12">
+        <p class="mt-2 footer-design small-text"> {{ .Site.Params.design | markdownify }}</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
 </footer>
 
 {{ "<!-- JS Plugins -->" | safeHTML }}
@@ -67,41 +75,46 @@
 {{ if site.Params.cookies.enable }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
 <div id="js-cookie-box" class="cookie-box cookie-box-hide">
-	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-sm btn-main ml-2">I Accept</span>
+  This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button"
+    class="btn btn-sm btn-main ml-2">I Accept</span>
 </div>
 <script>
-	(function ($) {
-		const cookieBox = document.getElementById('js-cookie-box');
-		const cookieButton = document.getElementById('js-cookie-button');
-		if (!Cookies.get('cookie-box')) {
-			cookieBox.classList.remove('cookie-box-hide');
-			cookieButton.onclick = function () {
-				Cookies.set('cookie-box', true, {
-					expires: {{ site.Params.cookies.expire_days }}
-				});
-				cookieBox.classList.add('cookie-box-hide');
-			};
-		}
-	})(jQuery);
+  (function ($) {
+    const cookieBox = document.getElementById('js-cookie-box');
+    const cookieButton = document.getElementById('js-cookie-button');
+    if (!Cookies.get('cookie-box')) {
+      cookieBox.classList.remove('cookie-box-hide');
+      cookieButton.onclick = function () {
+        Cookies.set('cookie-box', true, {
+          expires: {
+            {
+              site.Params.cookies.expire_days
+            }
+          }
+        });
+        cookieBox.classList.add('cookie-box-hide');
+      };
+    }
+  })(jQuery);
 </script>
 
 <!-- cookie style -->
 <style>
-.cookie-box {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  text-align: center;
-  z-index: 9999;
-  padding: 1rem 2rem;
-  background: rgb(71, 71, 71);
-  transition: all .75s cubic-bezier(.19, 1, .22, 1);
-  color: #fdfdfd;
-}
+  .cookie-box {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 9999;
+    padding: 1rem 2rem;
+    background: rgb(71, 71, 71);
+    transition: all .75s cubic-bezier(.19, 1, .22, 1);
+    color: #fdfdfd;
+  }
 
-.cookie-box-hide {
-  display: none;
-}
+  .cookie-box-hide {
+    display: none;
+  }
 </style>
 {{ end }}
