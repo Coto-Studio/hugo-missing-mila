@@ -4,7 +4,13 @@
 .rounded-15{
  border-radius: 15px;
 }
-
+// ========== NavBar Area==========
+.navbar-brand > h2 {
+ font-size: 1.5rem;
+}
+// .btn{
+//  display: none;
+// }
 
 // ========== Hero Area==========
 
@@ -16,14 +22,11 @@
  padding: 150px 0;
 }
 
-
-.main-banner>h1 {
+.main-banner > h1, p {
  max-width: 610px;
 }
 
-.main-banner-text {
- max-width: 640px;
-}
+
 
 // ======= Feature Home ( Read on device)======
 
@@ -52,3 +55,9 @@
 .line {
  border: 1px solid red;
 }
+
+  @media (min-width: 1200px) { 
+  .container {
+   max-width: 1300px;
+  }
+  }
