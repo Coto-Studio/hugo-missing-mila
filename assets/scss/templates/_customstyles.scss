@@ -6,7 +6,7 @@
 }
 // ========== NavBar Area==========
 .navbar-brand > h2 {
- font-size: 1.5rem;
+ font-size: x-large;
 }
 // .btn{
 //  display: none;
@@ -61,3 +61,17 @@
    max-width: 1300px;
   }
   }
+
+    @media (max-width: 480px) {
+    .navbar-brand > h2 {
+    font-size: small;
+    max-width: 100px;
+    }
+    .footer-copy {
+     text-align: start;
+     }
+    
+    .btn{
+     font-size: 11px;
+    }
+    }
