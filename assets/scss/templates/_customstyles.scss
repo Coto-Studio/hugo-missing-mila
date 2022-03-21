@@ -35,25 +35,23 @@
 }
 // ======= Footer Area ======
 
-.small-text {
- font-size: smaller;
-}
 
 .footer-text {
- max-width: 440px;
+ max-width: 450px;
 }
 
-.footer-copy {
- text-align: end;
-}
-
+.footer-copy,
 .footer-design {
  text-align: center;
 }
 
+.small-text {
+ font-size: smaller;
+}
+
 
 .line {
- border: 1px solid red;
+ border: 1px solid purple;
 }
 
   @media (min-width: 1200px) { 
@@ -62,13 +60,19 @@
   }
   }
 
-    @media (max-width: 480px) {
+    @media (max-width: 960px) {
     .navbar-brand > h2 {
     font-size: small;
     max-width: 100px;
     }
+
+
+    
+    .footer-design,
+    .footer-widget,  
+    .footer-text,
     .footer-copy {
-     text-align: start;
+     text-align: left;
      }
     
     .btn{
