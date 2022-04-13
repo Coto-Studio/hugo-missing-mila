@@ -4,7 +4,13 @@
 .rounded-15{
  border-radius: 15px;
 }
-
+// ========== NavBar Area==========
+.navbar-brand > h2 {
+ font-size: x-large;
+}
+// .btn{
+//  display: none;
+// }
 
 // ========== Hero Area==========
 
@@ -16,14 +22,11 @@
  padding: 150px 0;
 }
 
-
-.main-banner>h1 {
+.text-banner,
+.main-banner > h1{
  max-width: 610px;
 }
 
-.main-banner-text {
- max-width: 640px;
-}
 
 // ======= Feature Home ( Read on device)======
 
@@ -32,23 +35,47 @@
 }
 // ======= Footer Area ======
 
-.small-text {
- font-size: smaller;
-}
 
 .footer-text {
- max-width: 440px;
+ max-width: 450px;
 }
 
-.footer-copy {
- text-align: end;
-}
-
+.footer-copy,
 .footer-design {
  text-align: center;
 }
 
+.small-text {
+ font-size: smaller;
+}
+
 
 .line {
- border: 1px solid red;
+ border: 1px solid purple;
 }
+
+  @media (min-width: 1200px) { 
+  .container {
+   max-width: 1300px;
+  }
+  }
+
+    @media (max-width: 960px) {
+    .navbar-brand > h2 {
+    font-size: small;
+    max-width: 100px;
+    }
+
+
+    
+    .footer-design,
+    .footer-widget,  
+    .footer-text,
+    .footer-copy {
+     text-align: left;
+     }
+    
+    .btn{
+     font-size: 11px;
+    }
+    }
