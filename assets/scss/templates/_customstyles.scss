@@ -6,10 +6,11 @@
 }
 // ========== NavBar Area==========
 .navbar-brand > h2 {
- font-size: x-large;
+ font-size: 1.5rem;
 }
 // .btn{
 //  display: none;
+// }
 
 
 // ========== Hero Area==========
@@ -56,3 +57,9 @@
 .line {
  border: 1px solid purple;
 }
+
+  @media (min-width: 1200px) { 
+  .container {
+   max-width: 1300px;
+  }
+  }
