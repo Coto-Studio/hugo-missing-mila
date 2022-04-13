@@ -10,7 +10,7 @@
 }
 // .btn{
 //  display: none;
-// }
+
 
 // ========== Hero Area==========
 
@@ -27,6 +27,9 @@
  max-width: 610px;
 }
 
+.main-banner-text {
+ max-width: 640px;
+}
 
 // ======= Feature Home ( Read on device)======
 
@@ -53,29 +56,3 @@
 .line {
  border: 1px solid purple;
 }
-
-  @media (min-width: 1200px) { 
-  .container {
-   max-width: 1300px;
-  }
-  }
-
-    @media (max-width: 960px) {
-    .navbar-brand > h2 {
-    font-size: small;
-    max-width: 100px;
-    }
-
-
-    
-    .footer-design,
-    .footer-widget,  
-    .footer-text,
-    .footer-copy {
-     text-align: left;
-     }
-    
-    .btn{
-     font-size: 11px;
-    }
-    }
