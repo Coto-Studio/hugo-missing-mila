@@ -985,6 +985,10 @@ CONTACT PAGE
   font-size: clamp(1rem, 5vw, 1.5rem);
 }
 
+.btn-main-2 {
+  font-size: clamp(0.5rem, 2.6vw, 1rem);
+}
+
 .banner-img > img {
   border-radius: 0px;
 }
@@ -1026,6 +1030,24 @@ CONTACT PAGE
 @media (min-width: 1200px) {
   .container {
     max-width: 1300px;
+  }
+}
+@media (max-width: 450px) {
+  nav .container {
+    padding: 0;
+    justify-content: space-around;
+  }
+
+  .navbar > .container, .navbar > .container-fluid {
+    justify-content: normal;
+  }
+
+  .container {
+    padding: 35px 35px 0;
+  }
+
+  .navbar-toggler {
+    padding: 0;
   }
 }
 
