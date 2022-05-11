@@ -1,4 +1,4 @@
-name: Hugo Build and Deploy to S3
+name: Build and Deploy Missing Mila to Linode Object Storage
 
 on:
   push:
@@ -6,42 +6,9 @@ on:
       - main
       - dev
 
-env:
-  obj-access-key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  obj-secret-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  obj-region: "us-east-1"
-  obj-bucket: ${{ github.event.repository.name }}
-  branch: ${{ github.head_ref }}
-
 jobs:
-  build:
-    name: Build and Deploy
-    runs-on: ubuntu-latest
-    steps:
-      - name: Echo Vars
-        run: |
-          echo "s3://${{ env.obj-bucket }}/${{ env.branch}}"
-
-#       - name: Check out master
-#         uses: actions/checkout@master
-#
-#       - name: Deploy Hugo to Object Storage
-#         uses: AlbertMorenoDEV/deploy-hugo-to-s3-action@v0.0.5
-#         with:
-#           hugo-version: 0.92.0
-#           aws-access-key-id: ${{ env.obj-access-key }}
-#           aws-secret-access-key: ${{ env.obj-secret-key }}
-#           region: ${{ env.obj-region }}
-#           target: "production"
-#
-#       - name: Set up S3cmd cli tool
-#         uses: s3-actions/s3cmd@v1.1
-#         with:
-#           provider: linode # default is linode
-#           region: ${{ env.obj-region }}
-#           access_key: ${{ env.obj-access-key }}
-#           secret_key: ${{ env.obj-secret-key }}
-#
-#       - name: Update File Permissions
-#         run: |
-#           s3cmd setacl s3://${{ env.obj-bucket }}/ --acl-public --recursive
+  deploy:
+    uses: Coto-Studio/workflows/.github/workflows/hugo-build-and-deploy.yml@main
+    secrets:
+      obj-access-key: ${{ secrets.LINODE_ACCESS_KEY }}
+      obj-secret-key: ${{ secrets.LINODE_SECRET_KEY }}
