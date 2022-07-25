@@ -4,6 +4,7 @@ title = "Missing Mila, Finding Family"
 theme = "influencer-hugo"
 summaryLength = "10"
 paginate = 6
+enableRobotsTXT= true
 
 ############################# Plugins ##############################
 [params.plugins]
