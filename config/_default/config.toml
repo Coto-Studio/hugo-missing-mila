@@ -1,4 +1,4 @@
-baseURL = "https://www.missingmila.com"
+baseURL = "http://localhost:1313/"
 languageCode = "en-us"
 title = "Missing Mila, Finding Family"
 theme = "influencer-hugo"
