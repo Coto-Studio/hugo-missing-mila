@@ -1,14 +1,14 @@
-name: Build and Deploy Missing Mila to Linode Object Storage
+name: Coto Studio - Build Hugo Site and Deploy to Linode Object Storage
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - main
       - dev
+      - main
 
 jobs:
-  coto_studio:
-    name: Coto.Studio
+  call-reuseable-workflow:
     uses: Coto-Studio/workflows/.github/workflows/hugo-build-and-deploy.yml@main
     secrets:
       obj-access-key: ${{ secrets.LINODE_ACCESS_KEY }}
