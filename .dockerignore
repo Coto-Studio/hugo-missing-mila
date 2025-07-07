@@ -1,0 +1,8 @@
+.hugo_build.lock
+.git*
+.nova
+.DS_Store
+.dockerignore
+.prettier*
+Dockerfile
+public/
