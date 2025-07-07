@@ -1,15 +1,25 @@
-name: Coto Studio - Build Hugo Site and Deploy to Linode Object Storage
+name: Hugo Site - Build & Deploy on Push
 
 on:
-  workflow_dispatch:
   push:
     branches:
-      - dev
-      - main
+      - "main"
+      - "dev"
+  workflow_dispatch:
+
+permissions:
+  packages: write
 
 jobs:
-  call-reuseable-workflow:
-    uses: Coto-Studio/workflows/.github/workflows/hugo-build-and-deploy.yml@main
+  cs-docker-imgae-build:
+    name: CS Workflow
+    uses: Coto-Studio/workflows/.github/workflows/docker-build-image-v3.yml@main
     secrets:
-      obj-access-key: ${{ secrets.LINODE_ACCESS_KEY }}
-      obj-secret-key: ${{ secrets.LINODE_SECRET_KEY }}
+      OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+
+  cs-docker-stack-deploy:
+    name: CS Workflow
+    needs: cs-docker-imgae-build
+    uses: Coto-Studio/workflows/.github/workflows/docker-stack-deploy-v3.yml@main
+    secrets:
+      OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
