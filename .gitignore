@@ -5,3 +5,4 @@ public/
 resources/
 .sass-cache/
 .vscode/
+docker-stack-op.yaml
